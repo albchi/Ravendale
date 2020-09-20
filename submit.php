@@ -5,7 +5,7 @@
    echo "<br>";
 
    // $conn = new mysqli("localhost", "root", "", "lamp_final_project");
-   $conn = new mysqli("localhost", "root", "newyork", "ravendale_db");
+   $conn = new mysqli("localhost", "root", "password", "ravendale_db");
    // print_r($conn);
 
    if ($conn->connect_error) {
