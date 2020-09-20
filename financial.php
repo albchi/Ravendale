@@ -3,7 +3,7 @@
 
 
    echo "<br>";
-   $conn = new mysqli("localhost", "root", "newyork", "ravendale_db");
+   $conn = new mysqli("localhost", "root", "password", "ravendale_db");
    if ($conn->connect_error) {
       die("Failed to connect to MySQL Server " . $conn->connecterror);
    }
