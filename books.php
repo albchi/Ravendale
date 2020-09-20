@@ -3,8 +3,8 @@
 
 
    echo "<br>";
-   // $conn = new mysqli("localhost", "root", "newyork", "lamp_final_project");
-   $conn = new mysqli("localhost", "root", "newyork", "ravendale_db");
+   // $conn = new mysqli("localhost", "root", "password", "lamp_final_project");
+   $conn = new mysqli("localhost", "root", "password", "ravendale_db");
    // debug // print_r($conn);
    if ($conn->connect_error) {
       die("Failed to connect to MySQL Server " . $conn->connecterror);
