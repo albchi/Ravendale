@@ -85,7 +85,7 @@
 
    echo "<br>";
    echo "<br>";
-   print "<a href=\"cll.html\"> Go Back To Main</a>";
+   print "<a href=\"index.html\"> Go Back To Main</a>";
 
    $conn->close();
 ?>
