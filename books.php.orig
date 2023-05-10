@@ -1,13 +1,11 @@
 <?php
 
 
-   include 'dbinfo.php';
-
 
    echo "<br>";
-   // $conn = new mysqli("localhost", "root", "password", "ravendale_db");
-   $conn = new mysqli($dbhost, $dbun, $dbpw, $dbdb);
-
+   // $conn = new mysqli("localhost", "root", "password", "lamp_final_project");
+   $conn = new mysqli("localhost", "root", "password", "ravendale_db");
+   // debug // print_r($conn);
    if ($conn->connect_error) {
       die("Failed to connect to MySQL Server " . $conn->connecterror);
    }
@@ -25,7 +23,7 @@
    // $tName = "tOrder";
    // $results = $conn->query("SELECT * FROM tOrder");
    // $results = $conn->query("SELECT * FROM tPassword"); // works
-   $results = $conn->query("SELECT * FROM tPosts WHERE SubCategory_ID = 6");  // SubCategory = 0 : books
+   $results = $conn->query("SELECT * FROM tPosts WHERE SubCategory_ID = 0");  // SubCategory = 0 : books
    // $results = $conn->query("SELECT * FROM tPosts"); 
 
 

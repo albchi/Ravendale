@@ -1,10 +1,16 @@
 <?php
 
 
+   include 'dbinfo.php';
+
+
 
    echo "<br>";
-   $conn = new mysqli("localhost", "root", "password", "ravendale_db");
+   // $conn = new mysqli("localhost", "root", "password", "ravendale_db");
+   $conn = new mysqli($dbhost, $dbun, $dbpw, $dbdb);
+
    if ($conn->connect_error) {
+
       die("Failed to connect to MySQL Server " . $conn->connecterror);
    }
    // print "Success to connect to MySQL Server";
