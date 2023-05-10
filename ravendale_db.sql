@@ -1,3 +1,7 @@
+# create a brand new database needed for CLL LAMP website
+# mysql > source ravendale_db.sql # this file
+
+USE DATBASE ravendale_db;
 
 USE ravendale_db;
 
